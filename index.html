@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container nav-container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skillset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container  mt-5" id="content">
+        <div class="row">
+            <div class="col-md-12 col-lg-4" id="profile-pic">
+                <img src="g.jpg" alt="G">
+            </div>
+            <div class="col-md-12 col-lg-8 ">
+                <div id="about-me">
+                    <p id="welcome-sign">Hello and welcome to my webpage</p>
+                    <h3 id="name">I'm Gergely Csikós</h3>
+                    <p id="job-title">Wannabe Frontend Developer</p>
+                    <p id="bio">I started coding about a year ago on my own. After finding it to my liking, I joined online courses on HTML, CSS and Javascript. Since then, after my dayjob (currently working as a Technical Facility Manager) I try to spend as much
+                        as time learning and practicing as possible. In the future, I would like to work in the developer industry and also want to learn additional frameworks and libaries. </p>
+                </div>
+                <div id="courses">Courses that I have already finished:
+                    <ul>
+                        <li>IT Course offered by the Hungarian Goverment</li>
+                        <li>Checkpoint IT Education
+                            <ul>
+                                <li>WEB 1 Course</li>
+                                <li>WEB 2 Course</li>
+                            </ul>
+                        </li>
+                        <li>Udemy Courses
+                            <ul>
+                                <li>Brad Traversy: Bootstrap 4 from Scratch With 5 Projects</li>
+                                <li>Brad Traversy: 50 Projects in 50 Days - HTML,CSS & Javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills">
+        <div class="container">
+            <h2>Skillset</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="htmlPart box">
+                        <span><i class="fab fa-html5 skillIcon"></i></span>
+                        <h4>HTML</h4>
+                        <p><span class="mr-3"><i class="fas fa-arrow-right"></i></span>Solid knowledge of HTML
+                        </p>
+                        <p><span class="mr-3"><i class="fas fa-arrow-right"></i></span>Strucutured markup
+                        </p>
+                        <p><span class="mr-3"><i class="fas fa-arrow-right"></i></span>HTML 5 Semantics
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="cssPart box">
+                        <span><i class="fab fa-css3-alt skillIcon"></i></span>
+                        <h4>CSS</h4>
+                        <p><span class="mr-3"><i class="fas fa-arrow-right"></i></span>Responsive design
+                        </p>
+                        <p><span class="mr-3"><i class="fas fa-arrow-right"></i></span> Bootstrap
+                        </p>
+                        <p><span class="mr-3"><i class="fas fa-arrow-right"></i></span>CSS Grid, Flexbox
+                        </p>
+                        <p><span class="mr-3"><i class="fas fa-arrow-right"></i></span>Positioning
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="javascriptPart box">
+                        <span><i class="fab fa-js skillIcon"></i></span>
+                        <h4>Javascript</h4>
+                        <p><span class="mr-3"><i class="fas fa-arrow-right"></i></span>Syntaxes and fundamentals
+                        </p>
+                        <p><span class="mr-3"><i class="fas fa-arrow-right"></i></span>Dom Manipulation
+                        </p>
+                        <p><span class="mr-3"><i class="fas fa-arrow-right"></i></span>Jquery
+                        </p>
+                        <p><span class="mr-3"><i class="fas fa-arrow-right"></i></span>Events, functions, array methods
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 project-heading">
+                    <h2>Projects</h2>
+                    <p>Some small projects that I have made</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="panel-container">
+                    <div class="panel ">
+                        <h3>BasketBall Game</h3>
+                        <p> A game of basketball made with HTML,CSS and javascript.</p>
+                        <a href="https://gergelycsikos.github.io/basketBallGame/game.html" target="_blank"><i class="fas fa-play fa-sm mr-2"></i>Give it a go!</a>
+                    </div>
+                    <div class="panel">
+                        <h3>Webpage for law firm</h3>
+                        <p>A page I built for a friend of mine.</p>
+                        <a href="https://www.szegedadvocat.hu/" target="_blank"><i class="fas fa-play fa-sm  mr-2"></i>Take a look!</a>
+                    </div>
+                    <div class="panel">
+                        <h3>Quiz App</h3>
+                        <p>How much can you score?</p>
+                        <a href="https://gergelycsikos.github.io/quizApp/quiz.html" target="_blank"><i class="fas fa-play fa-sm  mr-2"></i>Test yourself!</a>
+                    </div>
+                    <div class="panel">
+                        <h3>Theme Clock</h3>
+                        <p>Toggle between dark and light mode!</p>
+                        <a href="https://gergelycsikos.github.io/themeClock/clock.html" target="_blank"><i class="fas fa-play fa-sm  mr-2"></i>Check it out!</a>
+                    </div>
+                    <div class="panel">
+                        <h3>ToDo App</h3>
+                        <p>Just a simple toDo app!</p>
+                        <a href="https://gergelycsikos.github.io/toDoApp/todo.html" target="_blank"><i class="fas fa-play fa-xs  mr-2"></i>Click to view!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <h2>Contact me</h2>
+        <p><span><i class="fas fa-map-marker-alt mr-4"></i></span >6724 Szeged, Sík Sándor str. 9 2/6</p>
+        <p>
+        <a href="tel:+36-203624034"><span class="mr-3"><i class="fas fa-phone"></i></span>+36-20-362-40-34</a>
+        </p>
+        <p>
+            <a href="mailto:gergelycsikos@gmail.com"><span class="mr-3"><i class="fas fa-envelope"></i></span>gergelycsikos@gmail.com</a>
+        </p>
+        <div id="socialMedia">
+            <a href="https://www.facebook.com/jack.napier.526" target="_blank" class="fb">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/vizfejjani/" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gergely-csik%C3%B3s-0911a9169/" target="_blank" class="linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/gergelycsikos" class="github" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-content">
+                    <p><span class="mr-4"><i class="fas fa-copyright"></i></span>Gergely Csikós 2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

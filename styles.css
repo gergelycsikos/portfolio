@@ -1,0 +1,272 @@
+    /*General Styles*/
+    
+     :root {
+        --primary-color: #232a34;
+        --secondary-color: teal;
+        --text-color: #fff
+    }
+    
+    body,
+    i {
+        color: var(--text-color);
+    }
+    
+    body {
+        background-color: var(--primary-color);
+    }
+    
+    i {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 50px;
+        margin: 25px;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    #welcome-sign,
+    #name,
+    #job-title,
+    #bio,
+    #courses,
+    #profile-pic {
+        opacity: 0;
+    }
+    /*Navbar*/
+    
+    .navbar-nav li {
+        padding-left: 20px;
+        font-size: 30px;
+    }
+    /*Main Content*/
+    
+    #welcome-sign {
+        background: var(--secondary-color);
+        padding: 15px 30px;
+        margin-bottom: 15px;
+        border-radius: 30px 0px 30px 0px;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    
+    #about-me h3 {
+        font-size: 50px;
+    }
+    
+    #content img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #about-me {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #about-me,
+    #courses {
+        font-size: 18px;
+    }
+    /* Skills */
+    
+    #skills h2,
+    #skills {
+        text-align: center;
+    }
+    
+    #skills h2 {
+        margin-top: 35px;
+    }
+    
+    .box {
+        margin-top: 15px;
+        border: 1px solid white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.2);
+        height: 320px;
+    }
+    
+    .box:hover {
+        transform: scale(1.05);
+        transition: transform 0.7s ease-in-out;
+    }
+    
+    #skills .skillIcon {
+        font-size: 50px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    
+    #skills h4 {
+        border-bottom: 1px solid var(--text-color);
+        display: inline-block;
+    }
+    /*Projects*/
+    
+    .project-heading {
+        text-align: center;
+        margin: 25px;
+    }
+    
+    #panel-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .panel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--text-color);
+        border-radius: 25px;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 300px;
+        flex: 1;
+        transition: flex 1.5s ease-in-out;
+        text-align: center;
+        margin: 5px;
+        cursor: pointer;
+    }
+    
+    .active {
+        flex: 4;
+    }
+    
+    .panel p,
+    .panel a {
+        display: none;
+        margin: 10px;
+        color: var(--text-color);
+        font-size: 20px;
+    }
+    
+    .panel p.visible,
+    .panel a.visible {
+        display: block;
+    }
+    
+    a:hover {
+        cursor: context-menu;
+    }
+    /*Contact*/
+    
+    #contact {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #contact h2 {
+        margin-bottom: 25px;
+    }
+    
+    #socialMedia {
+        margin-top: 25px;
+    }
+    
+    #socialMedia a {
+        text-align: center;
+        margin-right: 10px;
+        font-size: 23px;
+        border-radius: 30px;
+        width: 60px;
+        height: 45px;
+        line-height: 45px;
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    #socialMedia .fb:hover,
+    #socialMedia .instagram:hover,
+    #socialMedia .linkedin:hover,
+    #socialMedia .github:hover {
+        transition: all .2s ease-in-out;
+    }
+    
+    #socialMedia .fb:hover {
+        background-color: #3b5998;
+    }
+    
+    #socialMedia .instagram:hover {
+        background-color: #F56040;
+    }
+    
+    #socialMedia .linkedin:hover {
+        background-color: #2867B2;
+    }
+    
+    #socialMedia .github:hover {
+        background-color: #171515;
+    }
+    /* Footer */
+    
+    .footer-content {
+        text-align: center;
+        margin-top: 25px;
+        border-top: 1px solid var(--text-color);
+    }
+    
+    .footer-content p {
+        margin-top: 25px;
+    }
+    
+    @media (max-width: 480px) {
+        #about-me {
+            text-align: center;
+        }
+        #profile-pic {
+            display: none;
+        }
+        .navbar {
+            display: none;
+        }
+        #profile-pic,
+        .box {
+            margin-bottom: 15px;
+        }
+        .panel:nth-of-type(3),
+        .panel:nth-of-type(4) {
+            display: none;
+        }
+    }
+    
+    @media(max-width: 768px) {
+        #content .row {
+            flex-direction: column-reverse;
+        }
+        #profile-pic {
+            height: 75%;
+        }
+        .box {
+            height: 350px;
+        }
+    }
+    
+    @media(max-width: 375px) {
+        #content .row {
+            flex-direction: column-reverse;
+        }
+        #profile-pic {
+            height: 75%;
+        }
+        .box {
+            height: 350px;
+        }
+        .panel:nth-of-type(2),
+        .panel:nth-of-type(3),
+        .panel:nth-of-type(4) {
+            display: none;
+        }
+    }
