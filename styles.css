@@ -275,3 +275,9 @@
             display: none;
         }
     }
+    
+    @media(min-width: 768px) {
+        .box {
+            height: 400px;
+        }
+    }
